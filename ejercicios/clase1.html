@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 1</title>
+    <style>
+      .contenedor {
+        border: 5px solid #e1bee7;
+        background-color: #fff1ff;
+        display: grid;
+        grid-template-rows: 100px 200px;
+        /* Define el tamaño de cualquier column que se cree. */
+        grid-auto-columns: 100px;
+        grid-auto-flow: column;
+        /* Determinamos el espacio entre elementos. */
+        gap: 16px;
+        /* column-gap: 32px;
+        row-gap: 44px; */
+      }
+
+      .contenedor-reto {
+        margin-block-start: 4rem;
+        border: 5px solid #e1bee7;
+        background-color: #fff1ff;
+        display: grid;
+        /* grid-template-rows: 100px 100px 100px; */
+        grid-template-rows: repeat(3, 100px);
+        grid-template-columns: 100px 100px;
+        grid-auto-flow: column;
+        gap: 20px;
+      }
+
+      .item {
+        border: 5px solid #00bcd4;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 4rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="contenedor">
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+      <div class="item">4</div>
+      <div class="item">5</div>
+      <div class="item">6</div>
+    </div>
+    <div class="contenedor-reto">
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+      <div class="item">4</div>
+      <div class="item">5</div>
+      <div class="item">6</div>
+    </div>
+  </body>
+</html>
